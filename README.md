@@ -40,4 +40,7 @@ campus-connect-frontend
 ![Screenshot 2024-02-03 200802](https://github.com/nikhilhmane49/campus-connect/assets/137916068/3fd1c67c-9c91-42ae-a838-69a52707b356)
 
 
+
+
+
 🚀!!Thank you for visiting! Feel free to explore the codebase and experience the campus-connect!!🚀
