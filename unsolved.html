@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unsolved page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="mainpro.css">
+</head>
+
+<body>
+    <div class="container-Admin-N">
+        <div class="Navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"></span>
+                        <span class="title2-Admin-N">Brand name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-house"></i></span>
+                        <span class="title2-Admin-N">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registra complaint.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-note-sticky"></i></span>
+                        <span class="title2-Admin-N">Register Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="solved-comp.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-square-check"></i></span>
+                        <span class="title2-Admin-N">Solved Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unsolved.html">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-square-xmark"></i></span>
+                        <span class="title2-Admin-N">unsolved Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html">
+                        <span class="icon-Admin-N"><i class="fa-brands fa-rocketchat"></i></span>
+                        <span class="title2-Admin-N">Chat Box</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-user"></i></span>
+                        <span class="title2-Admin-N">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="title2-Admin-N">Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title2-Admin-N">setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar-N">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search-Dash-N">
+                    <label>
+                        <input type="text" placeholder="Search  here">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <div class="user-Dash-N">
+                    <img src="profile img2.jpg" alt="">
+                </div>
+            </div>
+           
+
+            <div class="main-Dashborad-heading">
+                <p>UnSolved Complaint</p>
+            </div>
+
+
+
+            <div class="unsolved-name">
+                
+            <table class="unsolved-sub">
+                <thead>
+                    <tr>
+                    <th> ID</th>
+                    <th>Department Code</th>
+                    <th>complaint ID</th>
+                    <th>Complaint Type</th>
+                    <th>solved date</th>
+                    <th>Desc</th>
+                    <th>Complaint status</th>
+                </tr>
+                </thead>
+            
+            
+            
+            
+            <tbody>
+
+
+
+                <tr>
+                    <td> 01</td>
+                    <td>943SCOE</td>
+                    <td>05A</td>
+                    <td>canteen</td>
+                    <td>Aug 20,2023</td>
+                    <td><button herf="" class="btn-unsolved">Details</button></td>
+                    <td class="unsolved-status">pending</td>
+                </tr>
+            
+            
+            
+            
+            
+                <tr>
+                    <td> 02</td>
+                    <td>860SCOE</td>
+                    <td>89D</td>
+                    <td>Library</td>
+                    <td>Aug 1,2023</td>
+                    <td><button class="btn-unsolved" herf="">Details</button></td>
+                    <td class="unsolved-status">pending</td>
+                </tr>
+            
+            
+            
+            
+            
+            
+                <tr>
+                    <td> 03</td>
+                    <td>729SCOE</td>
+                    <td>85E</td>
+                    <td>Transpotation</td>
+                    <td>July 15,2023</td>
+                    <td><button class="btn-unsolved" herf="">Details</button></td>
+                    <td class="unsolved-status">pending</td>
+                </tr>
+            
+            
+            
+
+                <tr>
+                    <td> 04</td>
+                    <td>489SCOE</td>
+                    <td>85E</td>
+                    <td>Aditourium</td>
+                    <td>July 25,2023</td>
+                    <td><button class="btn-unsolved" herf="">Details</button></td>
+                    <td class="unsolved-status">pending</td>
+                </tr>
+
+
+
+
+
+
+</div>
+</div>
+</body>
+
+<script>
+    let toggle = document.querySelector('.toggle');
+    let Navigation = document.querySelector('.Navigation');
+    let main = document.querySelector('.main');
+
+
+
+    toggle.onclick = function () {
+        Navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+
+
+
+
+
+
+
+    let list = document.querySelectorAll('.navigation li');
+    function activeLink() {
+        list.forEach((item) =>
+            item.classList.remove('hovered'));
+        this.classList.add('hovered');
+    }
+    list.forEach((item) =>
+        item.addEventListener('mouseover', activeLink));
+</script>
+
+</html>

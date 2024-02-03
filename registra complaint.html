@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="mainpro.css">
+    <script type="text/javascript" src=" https://unpkg.com/webcam-easy/dist/webacm-easy.min.js"></script>
+</head>
+
+<body>
+    <div class="container-Admin-N">
+        <div class="Navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"></span>
+                        <span class="title2-Admin-N">Brand name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-house"></i></span>
+                        <span class="title2-Admin-N">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="registra complaint.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-note-sticky"></i></span>
+                        <span class="title2-Admin-N">Register Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="solved-comp.html">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-square-check"></i></i></span>
+                        <span class="title2-Admin-N">Solved Complaint</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unsolved.html">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-square-xmark"></i></span>
+                        <span class="title2-Admin-N">unsolved complaint </span>
+                    </a>
+                </li>
+
+
+
+
+                <li>
+                    <a href="chat.html">
+                        <span class="icon-Admin-N"><i class="fa-brands fa-rocketchat"></i></span>
+                        <span class="title2-Admin-N">Chat Box</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-regular fa-user"></i></span>
+                        <span class="title2-Admin-N">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="title2-Admin-N">Log Out </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon-Admin-N"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title2-Admin-N">setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar-N">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search-Dash-N">
+                    <label>
+                        <input type="text" placeholder="Search  here">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+                <div class="user-Dash-N">
+                    <img src="img/profile img2.jpg" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div class="main-Dashborad-heading">
+                <p>Register Complaint</p>
+            </div>
+
+
+
+            <form action=" pdf.php" method="POST">
+
+                <div class="register-com">
+                    <div class="sub1-register-com">
+                        <label for="category-option">
+                            <p class="category-name">Category</p>
+                        </label>
+
+                        <select name="category" id="category-option">
+                            <option value="Exam Cell">Exam Cell</option>
+                            <option value="Student-section">Student-section</option>
+                            <option value="Transpotation">Transpotation</option>
+                            <option value="Cantten">Cantten</option>
+                            <option value="Library">Library</option>
+                            <option value="Class room">Class room</option>
+                            <option value="Sport room">Sports</option>
+                            <option value="Basement">Basement</option>
+                            <option value="Auditorium">Auditorium</option>
+                            <option value="Accout-section">Accout-section</option>
+
+                        </select>
+
+
+
+                        </label>
+
+                        <label for="category-option">
+                            <p class="category-name">Sub-Category</p>
+                        </label>
+
+                        <select name="sub-category" id="category-option">
+                            <option value="E"></option>
+                            <option value="S"></option>
+                            <option value="T"></option>
+                            <option value="C"></option>
+                            <option value="L"></option>
+                        </select>
+
+
+
+
+                        <label for="category-oode">
+                            <p class="category-name">Category-code</p>
+                        </label>
+
+                        <select name="category-code" id="category-code">
+                            <option value="Exam Cell">458SCOE</option>
+                            <option value="Student-section">590SCOE</option>
+                            <option value="Transpotation">729SCOE</option>
+                            <option value="Cantten">135SCOE</option>
+                            <option value="Library">248SCOE</option>
+                            <option value="Class room">548SCOE</option>
+                            <option value="Sport room">486SCOE</option>
+                            <option value="Basement">548SCOE</option>
+                            <option value="Auditorium">722SCOE</option>
+                            <option value="Accout-section">325SCOE</option>
+
+                        </select>
+
+
+
+
+
+
+
+                        <label for="complaint-type">
+                            <p class="Complaint-type">Complaint-type</p>
+                        </label>
+
+                        <select name="Complaint-type" id="Complaint-type">
+                            <option value="E"></option>
+                            <option value="S"></option>
+                            <option value="T"></option>
+                        </select>
+
+                        <label for="Floor">
+                            <p class="Floor">Floor</p>
+                        </label>
+                        <select name="Floor" id="Floor-option">
+                            <option value="Library">Basement</option>
+                            <option value="Library">Ground Floor</option>
+                            <option value="Exam Cell">1st Floor</option>
+                            <option value="Student-section">2nd Floor</option>
+                            <option value="Transpotation">3rd Floor</option>
+                            <option value="Cantten">4rd Floor</option>
+                        </select>
+
+
+
+
+                        <label for="Select-Department">
+                            <p class="Select-Department">Select-Department</p>
+                        </label>
+                        <select name="Select-Department" id="Select-Department">
+                            <option value="Fist-year">Fist-year</option>
+                            <option value="IT">IT</option>
+                            <option value="CS">CS</option>
+                            <option value="DS">DS</option>
+                            <option value="AIML">AIML</option>
+                            <option value="civil">CIVIL</option>
+                            <option value="AOUT-MOBILE">AOUT-MOBILE</option>
+                            <option value="MECHANIC">MECHANIC</option>
+                        </select>
+
+                        <div class="nature-complaint">
+                            <label for="nature-complaint">
+                                <p class="reg-name">Nature-complaint</p>
+                            </label>
+                            <input type="" id="nature-complaint" placeholder="  ">
+                        </div>
+
+
+                        <div class="complaint-detalis">
+                            <label for="complaint-detalis">
+                                <p class="complaint-detalis">Complaint-detalis</p>
+                            </label>
+                            <label for="complaint1-detalis">
+                                <p class="complaint1-detalis">(max 2000 words)</p>
+                            </label>
+                            <input type="" id="complaint-detalis" placeholder="  ">
+                        </div>
+                        <div class="upload">
+                            <h1>Image Upload</h1>
+                            <form action="/upload" method="post" enctype="multipart/form-data">
+                                <input class="fileupload" type="file" name="image" accept="image/*" required>
+                                <button class="fileuploadbtn" type="submit">Upload Image</button>
+                            </form>
+                        </div>
+
+                        <style>
+                            form input.fileupload {
+                                width: 650px;
+                                height: 80px;
+                                font-size: 1.5rem;
+                                margin-top: 30px;
+                            }
+
+                            form button.fileuploadbtn {
+                                width: 300px;
+                                height: 50px;
+                                font-size: 1.5rem;
+                                margin-top: 30px;
+                            }
+
+                            /* 
+                            input {
+                                width: 400px;
+                            } */
+
+                            .upload h1 {
+                                margin-top: 30px;
+                            }
+                        </style>
+
+
+
+                    </div>
+                </div>
+
+            </form>
+
+            <!-- <style>
+                a {
+                    padding: 10;
+                    background-color: orange;
+                    color: white;
+                    text-decoration: none;
+                }
+            </style>
+
+
+
+            <video id="webcam" autoplay playsline width="500" height="400"></video>
+            <canvas id="canvas"></canvas>
+            <a download onclick="takepicture">click</a>
+
+            <script>
+                const webcamelement = document.getElementById("webcam");
+                const canvaselement = document.getElementById("canvas");
+                const webcam1 = new webcam(webcamelement, "user", canvaselement);
+                webcam.start();
+
+
+                function takepicture() {
+                    let picture = webcam.click();
+                    document.querySelector("a").href = picture;
+                }
+
+            </script> -->
+
+        </div>
+    </div>
+
+
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let Navigation = document.querySelector('.Navigation');
+        let main = document.querySelector('.main');
+
+
+
+        toggle.onclick = function () {
+            Navigation.classList.toggle('active');
+            main.classList.toggle('active');
+        }
+
+
+
+
+
+
+
+        let list = document.querySelectorAll('.navigation li');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+
+    <script src="vanill-tilt.min.js.js"></script>
+</body>
+
+</html>
